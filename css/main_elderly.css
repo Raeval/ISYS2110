@@ -1,0 +1,148 @@
+
+
+img {
+    height: 100%;
+}
+
+.welcome-container {
+    text-align: center;
+    padding-top: 70px;
+    margin-bottom: 35px;
+}
+
+.welcome-text{
+    font-size: 52px;
+    margin: 0;
+    margin-bottom: -2px;
+}
+
+#user-text {
+    color: #388a4b;
+}
+
+.great-day-text {
+    margin: 0;
+    font-size: 20px;
+    font-style: italic;
+    color: grey;
+}
+
+/* Schedule */
+.schedule-section-container {
+    position: relative;
+    height: 680px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.schedule-box {
+    height: 500px;
+    width: 97%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.schedule-text {
+    font-size: 42px;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.schedule-container {
+    position: absolute;
+    background-color: rgb(51, 51, 51);
+    height: 575px;
+    width: 1070px;
+    bottom: 10px;
+}
+
+.health-condition-section-container {
+    margin: 0 auto;
+    display: flex;
+    width: 85%;
+    border-radius: 15px;
+    background-color: #B2D8BA;
+    height: 500px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.health-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    background-color: #2D6F3C;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.health-text-container {
+    margin-left: 20px;
+}
+
+.health-header {
+    font-size: 47px;
+    margin: 0;
+    margin-bottom: 3px;
+}
+
+.health-desc {
+    font-size: 16px;
+    margin:0;
+    color: #A2A2A2;
+}
+
+.health-kit-container {
+    margin: 0 auto;
+    margin-top: 35px;
+    height: 160px;
+}
+
+.health-right {
+    flex: 2;
+    color: #373737;
+    display: flex;
+    flex-direction: column;
+}
+
+.welfare-check-text {
+    height: 25px;
+    font-size: 20px;
+    margin: 20px 0 10px 20px;
+}
+
+.result-advice-container {
+    margin-top: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.result-advice-container li +li {
+    margin-top: 8px;
+}
+
+.result-container {
+    flex: 1;
+}
+
+.advice-container {
+    flex: 1;
+}
+
+.health-subheader {
+    font-size: 27px;
+    margin: 0 0 20px 20px;
+}
+
+.health-notebook-container {
+    height: 450px;
+    position: absolute;
+    right: -80px;
+    bottom: -50px;
+}
