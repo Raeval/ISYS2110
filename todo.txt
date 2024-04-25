@@ -1,3 +1,7 @@
+general:
+- Title should be right for each page
+- Root.css should contain all the color theme
+
 header:
 - Header should be displayed when user scrolls up
 - If profile picture is hovered, it should display settings and log out
