@@ -10,6 +10,91 @@
 
 <body>
     <nav class="navbar"></nav>
-    <script src="script.js"></script>
+    <div class="welcome-container">
+        <p class="welcome-text"><span class="primary-text">Welcome Back</span> <span id="user-text">User!</span></p>
+        <p class="great-day-text primary-text">Hope You're Having a Great Day!</p>
+    </div>
+
+    <div class="schedule-section-container">
+        <div class="primary-color schedule-box">
+            <p class="section-header schedule-text">This Week's Schedule</p>
+        </div>
+        <div class="schedule-container">
+
+        </div>
+    </div>
+
+    <div class="health-condition-section-container">
+        <div class="health-left">
+            <div class="health-text-container">
+                <p class="section-header health-header">Health condition</p>
+                <p class="health-desc">Based on your last appointment</p>
+            </div>
+            <div class="health-kit-container">
+                <img src="./Resources/figure-with-aid-kit.png">
+            </div>
+        </div>
+        <div class="health-right">
+            <!-- TODO: JAVASCRIPT -->
+            <p class="welfare-check-text">Latest Welfare Check: 20/04/24</p>
+            <div class="result-advice-container">
+                <div class="result-container">
+                    <p class="health-subheader">Result: </p>
+                    <ol>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                    </ol>
+                </div>
+                <div class="advice-container">
+                    <p class="health-subheader">Advice:</p>
+                    <ol>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="health-notebook-container">
+            <img src="./Resources/notes.png">
+        </div>
+    </div>
+
+    <div class="help-section-container primary-color">
+        <p class="need-help-text">Need Help with Anything Else?</p>
+        <div class="activities-container">
+            <div class="activity-container">
+                <div class="activity-image-container">
+                    <img src="Resources/helping-elderly-bg.jpeg" class="activity-image">
+                </div>
+                <div class="desc-container">
+                    <p class="activity-text">Request a visit</p>
+                    <p class="activity-desc">Arrange for a Visit! Whether it's virtually or in-person, our team is here to accompany you every step of the way.</p>
+                </div>
+            </div>
+            <div class="activity-container">
+                <div class="activity-image-container">
+                    <img src="./Resources/Meeting_doctor.webp" class="activity-image">
+                </div>
+                <div class="desc-container">
+                    <p class="activity-text">Wellness Check</p>
+                    <p class="activity-desc">We'll conduct blood tests and schedule an appointment for you with a doctor to assess your health.</p>
+                </div>
+            </div>
+            <div class="activity-container">
+                <div class="activity-image-container">
+                    <img src="./Resources/old-people-having-fun.jpeg" class="activity-image">
+                </div>
+                <div class="desc-container">
+                    <p class="activity-text">Join a Social Activity</p>
+                    <p class="activity-desc">Join the fun! Dive into our senior social events. Make friends, share laughs, and savor great moments in our warm community.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script/header.js"></script>
+    <script src="script/main_elderly.js"></script>
 </body>
 </html>

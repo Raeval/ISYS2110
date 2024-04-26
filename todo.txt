@@ -1,7 +1,13 @@
 general:
 - Title should be right for each page
 - Root.css should contain all the color theme
+- Tutorial on how to use the website
 
 header:
 - Header should be displayed when user scrolls up
 - If profile picture is hovered, it should display settings and log out
+
+main_elderly:
+- Organize social activity
+- Fix bold for section header
+- Fonts

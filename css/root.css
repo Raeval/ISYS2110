@@ -7,6 +7,11 @@ body {
     background-color: #E0B138;
 }
 
+.primary-text {
+    color: #E0B138;
+}
+
 .section-header {
+    font-size: 30px;
     color: #F0EEE6;
 }
