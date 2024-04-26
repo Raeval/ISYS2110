@@ -1,6 +1,7 @@
 general:
 - Title should be right for each page
 - Root.css should contain all the color theme
+- Tutorial on how to use the website
 
 header:
 - Header should be displayed when user scrolls up
