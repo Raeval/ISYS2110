@@ -9,33 +9,111 @@ img {
     overflow: hidden;
 }
 
-.welcome_content {
+/*.welcome_content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     z-index: 1;
-}
+}*/
 
 #myButton {
-    background-color: #4CAF50; /* Green */
+    background-color:  rgb(203, 146, 0); 
     border: none;
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 18px;
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 10px;
-  }
-  
-  #myButton:hover {
+    position: absolute;
+    top: 630px;  /* Y position */
+    left: 26px;  /* X position */
+    font-weight: bold;
+    z-index: 1000;
+}
+
+#myButton:hover {
     background-color: #45a049; /* Darker green */
-  }
-  
+}
+
+
+.helping-elderly {
+    width: 100%;
+    height: auto;
+    border: 1px solid #000;
+}
+.color-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(225, 162, 0);
+    z-index: 1000;
+}
+.fixed-image {
+    position: fixed;
+    top: 7px;  /* Y position */
+    left: 50px;  /* X position */
+    width: 70px;  /* Image width */
+    height: auto;  /* Maintain aspect ratio */
+    z-index: 1000;  /* Make sure the image stays above other elements */
+}
+.fixed-image-1 {
+    position: fixed;
+    top: 6px;  /* Y position */
+    left: 1350px;  /* X position */
+    width: 70px;  /* Image width */
+    height: auto;  /* Maintain aspect ratio */
+    z-index: 1000;  /* Make sure the image stays above other elements */
+}
+.fixed-text {
+    position: fixed;
+    top: 30px;  /* Y position */
+    left: 895px;  /* X position */
+    font-size: 19px;  /* Text size */
+    font-weight: bold;
+    z-index: 1000;  /* Ensure the text stays above other elements */
+}
+.fixed-text-1 {
+    position: fixed;
+    top: 30px;  /* Y position */
+    left: 1060px;  /* X position */
+    font-size: 19px;  /* Text size */
+    font-weight: bold;
+    z-index: 1000;  /* Ensure the text stays above other elements */
+}
+.fixed-text-2 {
+    position: fixed;
+    top: 30px;  /* Y position */
+    left: 1215px;  /* X position */
+    font-size: 19px;  /* Text size */
+    font-weight: bold;
+    z-index: 1000;  /* Ensure the text stays above other elements */
+}
+.main-title {
+    position: absolute;
+    top: 460px;  /* Y position */
+    left: 27px;  /* X position */
+    font-size: 45px;  /* Text size */
+    color: rgb(203, 146, 0);  /* Text color */
+    font-weight: bold;
+    z-index: 1000;  /* Ensure the title does not get overlapped by other elements */
+}
+.main-text {
+    position: absolute;
+    top: 540px;  /* Y position */
+    left: 27px;  /* X position */
+    font-size: 20px;  /* Text size */
+    color: rgb(228, 227, 223);  /* Text color */
+    font-weight: bold;
+    z-index: 1000;  /* Ensure the title does not get overlapped by other elements */
+}
 /*---------------------------------------------------------------------------------------------------------------*/
 
 
