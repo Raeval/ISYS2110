@@ -114,7 +114,30 @@ img {
     left: 26px;  /* X position */
     font-weight: bold;
 }
-  
+#circleButton {
+    width: 80px;  
+    height: 80px; 
+    background-color: rgb(225, 162, 0);
+    border-radius: 50%; 
+    border: none; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    top: 1580px;  
+    left: 1350px; 
+}
+#circleButton::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-left: 5px; 
+    border-top: 10px solid transparent; 
+    border-bottom: 10px solid transparent;
+    border-left: 20px solid white;
+}
 /*---------------------------------------------------------------------------------------------------------------*/
 
 
