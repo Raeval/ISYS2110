@@ -18,24 +18,7 @@ img {
     z-index: 1;
 }*/
 
-#myButton {
-    background-color:  rgb(203, 146, 0); 
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 10px;
-    position: absolute;
-    top: 630px;  /* Y position */
-    left: 26px;  /* X position */
-    font-weight: bold;
-    z-index: 1000;
-}
+
 
 #myButton:hover {
     background-color: #45a049; /* Darker green */
@@ -114,6 +97,24 @@ img {
     font-weight: bold;
     z-index: 1000;  /* Ensure the title does not get overlapped by other elements */
 }
+#myButton {
+    background-color:  rgb(203, 146, 0); 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    position: absolute;
+    top: 630px;  /* Y position */
+    left: 26px;  /* X position */
+    font-weight: bold;
+}
+  
 /*---------------------------------------------------------------------------------------------------------------*/
 
 
@@ -134,9 +135,6 @@ img {
     color: #ffffff;
     margin: 0;
 }
-
-
-
 
 .activities-container {
     display: grid;
@@ -202,33 +200,91 @@ img {
 
 
 .feedbacks_container {
-    
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    height: 700px; /*Height of Feedbacks section*/
+}
+
+.polygon-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.polygon {
+    position: absolute;
+    width: 100%; /* Fill the container entirely */
+    height: 100%; /* Fill the container entirely */
+    transform-origin: 50% 50%;
+    pointer-events: none; /* Add this line */
+}
+.polygon1 {
+    /*clip-path: polygon(100% 0%, 50% 80%, 80% 100%, 0% 100%);*/
+    clip-path: polygon(20% 100%, 100% 100%, 100% 0%); /* Adjust coordinates as needed */
+    top: 0;
+    left: 0;
+    background-color: #A7AA77; /* Red */
+}
+.polygon3 {
+    clip-path: polygon(0% 40%, 75% 100%, 0 100%);
+    top: 0;
+    left: 0;
+    background-color: #6B6E42; /* Blue */
+}
+
+.feedbacks_title{
+    font-size: 50px;
+    margin-left: 50px;
 }
 
 
+.button-grid {
+    padding-top: 100px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Gap between buttons */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center text */
+    z-index: 2;
+}
 
+.feedback_button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    /*padding: 15px 32px;*/
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 200px;
+    margin: 4px auto;
+    cursor: pointer;
+}
 
-.rectangular-area {
-    width: 300px; /* Adjust width as needed */
-    height: 200px; /* Adjust height as needed */
-    border: 1px solid #000; /* Optional: Add border for visualization */
-    overflow: hidden; /* Ensure content doesn't overflow */
+.circle-button {
+    width: 50px;
+    height: 50px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
   }
-  
-  .top-half {
-    height: 80%;
-    background-color: red; /* Color for the top half */
-    color: white; /* Text color for the top half */
-    text-align: center; /* Center-align text */
-    padding: 20px; /* Add padding for spacing */
-  }
-  
-  .bottom-half {
-    height: 20%;
-    background-color: white; /* Color for the bottom half */
-    color: black; /* Text color for the bottom half */
-    text-align: center; /* Center-align text */
-    padding: 20px; /* Add padding for spacing */
+
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
   }
   
 
