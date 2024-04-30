@@ -1,0 +1,155 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*feedback box section*/
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 180vh;
+}
+
+.wrapper{
+    background-color: #e0b038ae;
+    padding: 1rem;
+    max-width: 576px;
+    width: 80%;
+    border-radius: .75rem;
+    text-align: center;
+    margin-top: 5rem; 
+}
+
+.wrapper h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.rating{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: .5rem;
+    font-size: 2rem;
+    color: #6ab04c;
+    margin-bottom: 2rem;
+}
+
+.rating .star{
+    cursor: pointer;
+}
+
+.rating .star:hover{
+    transform: scale(1.1);
+}
+
+textarea{
+    width: 90%;
+    background-color: #F5F5F5;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+    resize: none;
+    margin-bottom: .5rem;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center; 
+    grid-gap: .5rem;
+}
+
+.btn-group .btn{
+    padding: .55rem 1rem;
+    width: 15%;
+    flex: 0 0 auto;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: .875rem;
+    font-weight: 500;
+}
+
+textarea, .btn-group {
+    align-self: center;
+}
+
+.btn-group .btn.submit{
+    background: #AAA;
+}
+
+.btn-group .btn.submit:hover{
+    background: #F5F5F5;
+}
+
+.btn-group .btn.cancel{
+    background: #AAA;
+}
+
+.btn-group .btn.cancel:hover{
+    background: #F5F5F5;
+}
+
+/*comment parts*/
+
+.testimonials{
+    padding: 70px 0;
+    color: #434343;
+    text-align: center;
+}
+
+.inner{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col{
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.testimonial {
+    padding: 30px;
+    background: #e0b038ae;
+    border-radius: 30px;
+}
+
+.testimonial img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.testimonial p {
+    font-size: 12px; 
+}
+
+
+.name{
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 20px 0;
+    font-weight: 600;
+}
+
+.stars{
+    color: #6ab04c;
+    margin-bottom: 10px;
+}
