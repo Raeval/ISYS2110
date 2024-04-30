@@ -9,6 +9,7 @@ allStar.forEach((item, idx)=> {
             if(i <= idx){
                 allStar[i].classList.replace('bx-star', 'bxs-star')
             }
+            
         }
     })
 })
