@@ -11,3 +11,6 @@ main_elderly:
 - Organize social activity
 - Fix bold for section header
 - Fonts
+
+Visit schedule:
+- Implement slider when book an appointment
