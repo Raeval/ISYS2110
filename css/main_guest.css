@@ -273,8 +273,9 @@ img {
     padding-bottom: 50px;
     position: relative;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
-    gap: 20px; /* Gap between buttons */
+    grid-template-columns: auto auto; /* Two columns */
+    grid-column-gap: 150px;
+    grid-row-gap: 50px;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     text-align: center; /* Center text */
@@ -283,7 +284,6 @@ img {
 }
 
 .feedback_button {
-    display: flex;
     align-items: center;
     background-color: #ececec;
     border: none;
@@ -306,7 +306,7 @@ img {
 .feedback_button_image {
     position: relative;
     top: 10px;  /* Y position */
-    right: 50px;  /* X position */
+    right: 5px;  /* X position */
     width: 80px;  /* Image size*/
     height: auto;  /* Maintain aspect ratio */
     /*background-color: #2233DD;*/
@@ -315,7 +315,7 @@ img {
     display: inline-block;
     position: relative;
     top: -35px;
-    right: 30px;
+    left: 10px;
     margin: 0;
     color: #33CC33;
     /*background-color: #2233DD;*/
@@ -323,6 +323,15 @@ img {
 p.feedback_desc{
     text-align: justify;
     color:#000;
+}
+
+.feedback_star{
+    display: inline-block;
+    position: relative;
+    right: 95px;
+}
+.orange{
+    color: orange;
 }
 
 
