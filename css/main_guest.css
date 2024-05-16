@@ -4,20 +4,10 @@ img {
 
 .welcome_section {
     position: relative;
-    height: 100vh; /* Adjust this value as needed */
+    height: 750px; /* Adjust this value as needed */
     background-color: #f4f4f4; /* Fallback color if the image doesn't load */
     overflow: hidden;
 }
-
-/*.welcome_content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    z-index: 1;
-}*/
-
 
 
 #myButton:hover {
@@ -30,58 +20,10 @@ img {
     height: auto;
     border: 1px solid #000;
 }
-.color-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 80px;
-    background-color: rgb(225, 162, 0);
-    z-index: 1000;
-}
-.fixed-image {
-    position: fixed;
-    top: 7px;  /* Y position */
-    left: 50px;  /* X position */
-    width: 70px;  /* Image width */
-    height: auto;  /* Maintain aspect ratio */
-    z-index: 1000;  /* Make sure the image stays above other elements */
-}
-.fixed-image-1 {
-    position: fixed;
-    top: 6px;  /* Y position */
-    left: 1350px;  /* X position */
-    width: 70px;  /* Image width */
-    height: auto;  /* Maintain aspect ratio */
-    z-index: 1000;  /* Make sure the image stays above other elements */
-}
-.fixed-text {
-    position: fixed;
-    top: 30px;  /* Y position */
-    left: 895px;  /* X position */
-    font-size: 19px;  /* Text size */
-    font-weight: bold;
-    z-index: 1000;  /* Ensure the text stays above other elements */
-}
-.fixed-text-1 {
-    position: fixed;
-    top: 30px;  /* Y position */
-    left: 1060px;  /* X position */
-    font-size: 19px;  /* Text size */
-    font-weight: bold;
-    z-index: 1000;  /* Ensure the text stays above other elements */
-}
-.fixed-text-2 {
-    position: fixed;
-    top: 30px;  /* Y position */
-    left: 1215px;  /* X position */
-    font-size: 19px;  /* Text size */
-    font-weight: bold;
-    z-index: 1000;  /* Ensure the text stays above other elements */
-}
+
 .main-title {
     position: absolute;
-    top: 460px;  /* Y position */
+    top: 540px;  /* Y position */
     left: 27px;  /* X position */
     font-size: 45px;  /* Text size */
     color: rgb(203, 146, 0);  /* Text color */
@@ -90,7 +32,7 @@ img {
 }
 .main-text {
     position: absolute;
-    top: 540px;  /* Y position */
+    top: 620px;  /* Y position */
     left: 27px;  /* X position */
     font-size: 20px;  /* Text size */
     color: rgb(228, 227, 223);  /* Text color */
@@ -115,38 +57,35 @@ img {
     font-weight: bold;
 }
 #circleButton {
-    width: 80px;  
-    height: 80px; 
+    width: 80px;
+    height: 80px;
     background-color: rgb(225, 162, 0);
-    border-radius: 50%; 
-    border: none; 
-    display: flex; 
+    border-radius: 50%;
+    border: none;
+    display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     position: absolute;
-    top: 1745px; 
-    left: 1350px;  
+    top: 1745px;
+    left: 1350px;
 }
 .arrow {
     position: absolute;
-    top: 1753px; 
-    left: 1354px; 
-    width: 70px; 
-    height: auto;   
-    display: flex; 
+    top: 1753px;
+    left: 1354px;
+    width: 70px;
+    height: auto;
+    display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     z-index: 1000;
-    /*background-color: #333333; /*---------------------------------------------------------------------------------++++++++++++*/
 }
+
 .image-link {
-    cursor: pointer; 
+    cursor: pointer;
 }
-
-/*---------------------------------------------------------------------------------------------------------------*/
-
 
 .our_service_container {
     width: 97%;
@@ -166,20 +105,6 @@ img {
     margin: 0;
 }
 
-.activities-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.activity-container {
-    padding-top: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-    height: 250px;
-}
 
 .desc_top {
     width: 300px;
@@ -221,13 +146,27 @@ img {
     color: #333333;
 }
 
+.activities-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.activity-container {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    height: 250px;
+}
+
 .activity-desc {
     padding-left: 20px;
     margin: 0;
     margin-top: 5px;
     color: #d8d8d8;
 }
-
 
 .feedbacks_container {
     padding-top: 20px;
@@ -252,7 +191,6 @@ img {
     pointer-events: none; /* Add this line */
 }
 .polygon1 {
-    /*clip-path: polygon(100% 0%, 50% 80%, 80% 100%, 0% 100%);*/
     clip-path: polygon(20% 100%, 100% 100%, 100% 0%); /* Adjust coordinates as needed */
     top: 0;
     left: 0;
@@ -272,75 +210,67 @@ img {
 
 
 .button-grid {
-    width: 97%;
-    padding-top: 100px;
-    padding-bottom: 50px;
+    width: 70%;
     position: relative;
     display: grid;
-    grid-template-columns: auto auto; /* Two columns */
+    grid-template-columns: 1fr 1fr; /* Two columns */
     grid-column-gap: 150px;
     grid-row-gap: 50px;
-    justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-    text-align: center; /* Center text */
     margin: 0 auto;
     z-index: 2;
 }
 
 .feedback_button {
-    align-items: center;
     background-color: #ececec;
+    height: 230px;
     border: none;
     color: white;
-    /*padding: 15px 32px;*/
-    padding: 20px;
-    text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     font-size: 16px;
-    width: 300px;
-    margin: 4px auto;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 10px;
     cursor: pointer;
 }
 
+.feedback_profile {
+    display: flex;
+    flex-direction: row;
+}
+
 .feedback_button_image {
-    position: relative;
-    top: 10px;  /* Y position */
-    right: 5px;  /* X position */
+    padding-left: 40px;
     width: 80px;  /* Image size*/
     height: auto;  /* Maintain aspect ratio */
-    /*background-color: #2233DD;*/
 }
+
 .feedback_button_title{
-    display: inline-block;
-    position: relative;
-    top: -35px;
-    left: 10px;
     margin: 0;
-    color: #33CC33;
+    flex: 1;
+    color: #259625;
     /*background-color: #2233DD;*/
 }
+
+.name_and_star {
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.feedback_star {
+    padding-top: 8px;
+}
+
 p.feedback_desc{
     text-align: justify;
     color:#000;
 }
 
-.feedback_star{
-    display: inline-block;
-    position: relative;
-    right: 95px;
+.feedback_desc_container {
+    margin: 0 30px;
 }
+
 .orange{
     color: orange;
 }
-
-
-/*
-Question : 
-Many pages are sharing same design style
-do we have to divide css files? Why not shares
-*/
