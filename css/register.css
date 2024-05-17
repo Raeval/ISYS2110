@@ -119,6 +119,10 @@ h2{
     background-image: linear-gradient(to right, #aa076b, #61045f);
 }
 
+.submit-btn {
+    cursor: pointer;
+}
+
 @media(max-width: 600px){
     .container{
         min-width: 280px;
