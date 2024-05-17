@@ -3,6 +3,7 @@ img {
 }
 
 .welcome_section {
+    padding-top: 72px;
     position: relative;
     height: 750px; /* Adjust this value as needed */
     background-color: #f4f4f4; /* Fallback color if the image doesn't load */
@@ -23,7 +24,7 @@ img {
 
 .main-title {
     position: absolute;
-    top: 540px;  /* Y position */
+    top: 535px;  /* Y position */
     left: 27px;  /* X position */
     font-size: 45px;  /* Text size */
     color: rgb(203, 146, 0);  /* Text color */
@@ -32,7 +33,7 @@ img {
 }
 .main-text {
     position: absolute;
-    top: 620px;  /* Y position */
+    top: 610px;  /* Y position */
     left: 27px;  /* X position */
     font-size: 20px;  /* Text size */
     color: rgb(228, 227, 223);  /* Text color */
@@ -52,7 +53,7 @@ img {
     cursor: pointer;
     border-radius: 10px;
     position: absolute;
-    top: 630px;  /* Y position */
+    top: 700px;  /* Y position */
     left: 26px;  /* X position */
     font-weight: bold;
 }
@@ -174,7 +175,6 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
 }
 
 .polygon-container {
@@ -194,6 +194,7 @@ img {
     clip-path: polygon(20% 100%, 100% 100%, 100% 0%); /* Adjust coordinates as needed */
     top: 0;
     left: 0;
+    bottom: 0;
     background-color: #A7AA77; /* Red */
 }
 .polygon3 {

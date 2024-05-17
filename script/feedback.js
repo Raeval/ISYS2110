@@ -1,3 +1,12 @@
+const nav = document.querySelector(".navbar");
+fetch('./components/navbar.html')
+  .then(res => res.text())
+  .then(data => {
+    nav.innerHTML = data;
+  })
+document.querySelector(".navbar").style.position = 'relative';
+
+
 const allStar = document.querySelectorAll('.rating .star')
 
 allStar.forEach((item, idx)=> {
