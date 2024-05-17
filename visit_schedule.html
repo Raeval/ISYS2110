@@ -5,80 +5,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/root.css">
     <link rel="stylesheet" type="text/css" href="css/visit_schedule.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Document</title>
 </head>
 <body>
     <nav class="sidebar">
-        <div class="logo-container">
-            <div class="back-btn-container">
+        <div class="top-container primary-color">
+            <div class="back-btn-container" onclick="window.location='main_elderly.html'">
                 <img class="back-btn" src="./Resources/back-arrow.png">
-                <p>BACK TO MENU</p>
+                <div class="text">
+                    <p>BACK TO MENU</p>
+                </div>
             </div>
-            <img src="./Resources/Logo.png">
+            <div class="logo-container">
+                <img class="logo" src="./Resources/Logo.png">
+            </div>
         </div>
 
         <div class="progress-bar">
-            <div class="choose-apt">
-                <p>Choose Appointment Time</p>
+            <div class="choose-type progress">
+                <img class="check" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAAA0NJREFUeF7tnEty4yAQhtHJZrK2r+FzJHMOX8Nej3MyJTgwQ1KmX3RD40JVycJGCD79/aAls4V1gAS2xQcmsAAhClmAFqA2J7IU5FFBx/Pxdwgh/oU97L+KMd4/+/zuFv9tYXsvvrtdTpf75z2PbgqKUPawv2Yw0kluYfsTz72cLm/SPjjnmQLSglKbUIJlqiwTQNZgfgKLoKwUpQ7oeD6+JVPiKFmlrQUoNUBJNX9VZtrYiSYoFUAjVQP5Jw2zawbkEU6GpqGkJkCH8yGaVM5dGg3D7PTb9XR9kfYuBjQJnMxFDEkEyLNZafskNqAZ4bT4JBagmeEUkF44azoWoMP5sEudnafzrqcred7khs+gHompkQE9i3q4pkYC9EzqKetLlPwIBeRpjaXtxz4LcqjDpgAatjrXBvKgPzSBRAF59D25qqhRVsEiGgjIo+8pF6Aa48PMbCpAj1bnCpBAMwMBeTIvqHTRCgkysyogT9ELq+u0AoLMDALkInpZw4mRDbqGa0A94EwLqBeclBtVHXVVQSMrhp3hREb9AUmTuQFwxIDEtR9pMjcIzt3KaqEeMjERIGkyNxKOFBD7kY40mRsNp5sPwtY1jxI6B3DEPoitoJRTgDWWEpITOP0TRYqSIkzo2Xnr8oFTSxqSSWOQoAn0hNOSScdX5ppeZ5FA6g0Hcwvm5Q7Mz5RKGgEHCvFf8IBDa7lBgTQKDjY2rKLYbGaUh3Wj4GD+B1VQbKBZVZRm2ZyIxG3bVLRPgET5UG2g0nUad+KU9ph5kRRkUXqVrvQpk+a0oURZ9LmYhYo4k7BqS1EPSUGxkYWKrCZO7RfzPf+DC7HHkZGGOERyM6p6yArKV9aMaOTZGDSkqocN6BlMjaMeNqDkj1w8L5MIiwtHBGhWSBI4YkAThn70PaB6YivRajpHazHbMATKqWI4TQrKI/Mc/qVmVVInZdLYbfIISQOOioI8KomyxsJuOjuTpnY4Uk1aqlE3sUfwOoO6JTjqv6tX8UE1deUNBDTeRq1cwwyMmYkBsO4bASjAMofSxcQgn1VuTZGg5e0pvm1N8RVF/m1PYbqBgEmiSHXcM7cz9UEzg+nug2aFtRSE3LkFaAFqM+4PJ0dDZ34lAuEAAAAASUVORK5CYII="/>
+                <div class="circle"></div>
+                <div class="progress-text"><p>Choose Appointment Type</p></div>
             </div>
-            <div class="details">
-                <p>Appointment Details</p>
+            <div class="choose-time progress">
+                <img class="check" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAAA0NJREFUeF7tnEty4yAQhtHJZrK2r+FzJHMOX8Nej3MyJTgwQ1KmX3RD40JVycJGCD79/aAls4V1gAS2xQcmsAAhClmAFqA2J7IU5FFBx/Pxdwgh/oU97L+KMd4/+/zuFv9tYXsvvrtdTpf75z2PbgqKUPawv2Yw0kluYfsTz72cLm/SPjjnmQLSglKbUIJlqiwTQNZgfgKLoKwUpQ7oeD6+JVPiKFmlrQUoNUBJNX9VZtrYiSYoFUAjVQP5Jw2zawbkEU6GpqGkJkCH8yGaVM5dGg3D7PTb9XR9kfYuBjQJnMxFDEkEyLNZafskNqAZ4bT4JBagmeEUkF44azoWoMP5sEudnafzrqcred7khs+gHompkQE9i3q4pkYC9EzqKetLlPwIBeRpjaXtxz4LcqjDpgAatjrXBvKgPzSBRAF59D25qqhRVsEiGgjIo+8pF6Aa48PMbCpAj1bnCpBAMwMBeTIvqHTRCgkysyogT9ELq+u0AoLMDALkInpZw4mRDbqGa0A94EwLqBeclBtVHXVVQSMrhp3hREb9AUmTuQFwxIDEtR9pMjcIzt3KaqEeMjERIGkyNxKOFBD7kY40mRsNp5sPwtY1jxI6B3DEPoitoJRTgDWWEpITOP0TRYqSIkzo2Xnr8oFTSxqSSWOQoAn0hNOSScdX5ppeZ5FA6g0Hcwvm5Q7Mz5RKGgEHCvFf8IBDa7lBgTQKDjY2rKLYbGaUh3Wj4GD+B1VQbKBZVZRm2ZyIxG3bVLRPgET5UG2g0nUad+KU9ph5kRRkUXqVrvQpk+a0oURZ9LmYhYo4k7BqS1EPSUGxkYWKrCZO7RfzPf+DC7HHkZGGOERyM6p6yArKV9aMaOTZGDSkqocN6BlMjaMeNqDkj1w8L5MIiwtHBGhWSBI4YkAThn70PaB6YivRajpHazHbMATKqWI4TQrKI/Mc/qVmVVInZdLYbfIISQOOioI8KomyxsJuOjuTpnY4Uk1aqlE3sUfwOoO6JTjqv6tX8UE1deUNBDTeRq1cwwyMmYkBsO4bASjAMofSxcQgn1VuTZGg5e0pvm1N8RVF/m1PYbqBgEmiSHXcM7cz9UEzg+nug2aFtRSE3LkFaAFqM+4PJ0dDZ34lAuEAAAAASUVORK5CYII="/>
+                <div class="circle"></div>
+                <div class="progress-text"><p>Select Time</p></div>
             </div>
-            <div class="confirm-apt">
-                <p>Confirm Appointment</p>
+            <div class="details progress">
+                <img class="check" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAAA0NJREFUeF7tnEty4yAQhtHJZrK2r+FzJHMOX8Nej3MyJTgwQ1KmX3RD40JVycJGCD79/aAls4V1gAS2xQcmsAAhClmAFqA2J7IU5FFBx/Pxdwgh/oU97L+KMd4/+/zuFv9tYXsvvrtdTpf75z2PbgqKUPawv2Yw0kluYfsTz72cLm/SPjjnmQLSglKbUIJlqiwTQNZgfgKLoKwUpQ7oeD6+JVPiKFmlrQUoNUBJNX9VZtrYiSYoFUAjVQP5Jw2zawbkEU6GpqGkJkCH8yGaVM5dGg3D7PTb9XR9kfYuBjQJnMxFDEkEyLNZafskNqAZ4bT4JBagmeEUkF44azoWoMP5sEudnafzrqcred7khs+gHompkQE9i3q4pkYC9EzqKetLlPwIBeRpjaXtxz4LcqjDpgAatjrXBvKgPzSBRAF59D25qqhRVsEiGgjIo+8pF6Aa48PMbCpAj1bnCpBAMwMBeTIvqHTRCgkysyogT9ELq+u0AoLMDALkInpZw4mRDbqGa0A94EwLqBeclBtVHXVVQSMrhp3hREb9AUmTuQFwxIDEtR9pMjcIzt3KaqEeMjERIGkyNxKOFBD7kY40mRsNp5sPwtY1jxI6B3DEPoitoJRTgDWWEpITOP0TRYqSIkzo2Xnr8oFTSxqSSWOQoAn0hNOSScdX5ppeZ5FA6g0Hcwvm5Q7Mz5RKGgEHCvFf8IBDa7lBgTQKDjY2rKLYbGaUh3Wj4GD+B1VQbKBZVZRm2ZyIxG3bVLRPgET5UG2g0nUad+KU9ph5kRRkUXqVrvQpk+a0oURZ9LmYhYo4k7BqS1EPSUGxkYWKrCZO7RfzPf+DC7HHkZGGOERyM6p6yArKV9aMaOTZGDSkqocN6BlMjaMeNqDkj1w8L5MIiwtHBGhWSBI4YkAThn70PaB6YivRajpHazHbMATKqWI4TQrKI/Mc/qVmVVInZdLYbfIISQOOioI8KomyxsJuOjuTpnY4Uk1aqlE3sUfwOoO6JTjqv6tX8UE1deUNBDTeRq1cwwyMmYkBsO4bASjAMofSxcQgn1VuTZGg5e0pvm1N8RVF/m1PYbqBgEmiSHXcM7cz9UEzg+nug2aFtRSE3LkFaAFqM+4PJ0dDZ34lAuEAAAAASUVORK5CYII="/>
+                <div class="circle"></div>
+                <div class="progress-text"><p>Appointment Details</p></div>
             </div>
-            <div class="done">
-                <p>Done</p>
+            <div class="confirm-apt progress">
+                <img class="check" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAAA0NJREFUeF7tnEty4yAQhtHJZrK2r+FzJHMOX8Nej3MyJTgwQ1KmX3RD40JVycJGCD79/aAls4V1gAS2xQcmsAAhClmAFqA2J7IU5FFBx/Pxdwgh/oU97L+KMd4/+/zuFv9tYXsvvrtdTpf75z2PbgqKUPawv2Yw0kluYfsTz72cLm/SPjjnmQLSglKbUIJlqiwTQNZgfgKLoKwUpQ7oeD6+JVPiKFmlrQUoNUBJNX9VZtrYiSYoFUAjVQP5Jw2zawbkEU6GpqGkJkCH8yGaVM5dGg3D7PTb9XR9kfYuBjQJnMxFDEkEyLNZafskNqAZ4bT4JBagmeEUkF44azoWoMP5sEudnafzrqcred7khs+gHompkQE9i3q4pkYC9EzqKetLlPwIBeRpjaXtxz4LcqjDpgAatjrXBvKgPzSBRAF59D25qqhRVsEiGgjIo+8pF6Aa48PMbCpAj1bnCpBAMwMBeTIvqHTRCgkysyogT9ELq+u0AoLMDALkInpZw4mRDbqGa0A94EwLqBeclBtVHXVVQSMrhp3hREb9AUmTuQFwxIDEtR9pMjcIzt3KaqEeMjERIGkyNxKOFBD7kY40mRsNp5sPwtY1jxI6B3DEPoitoJRTgDWWEpITOP0TRYqSIkzo2Xnr8oFTSxqSSWOQoAn0hNOSScdX5ppeZ5FA6g0Hcwvm5Q7Mz5RKGgEHCvFf8IBDa7lBgTQKDjY2rKLYbGaUh3Wj4GD+B1VQbKBZVZRm2ZyIxG3bVLRPgET5UG2g0nUad+KU9ph5kRRkUXqVrvQpk+a0oURZ9LmYhYo4k7BqS1EPSUGxkYWKrCZO7RfzPf+DC7HHkZGGOERyM6p6yArKV9aMaOTZGDSkqocN6BlMjaMeNqDkj1w8L5MIiwtHBGhWSBI4YkAThn70PaB6YivRajpHazHbMATKqWI4TQrKI/Mc/qVmVVInZdLYbfIISQOOioI8KomyxsJuOjuTpnY4Uk1aqlE3sUfwOoO6JTjqv6tX8UE1deUNBDTeRq1cwwyMmYkBsO4bASjAMofSxcQgn1VuTZGg5e0pvm1N8RVF/m1PYbqBgEmiSHXcM7cz9UEzg+nug2aFtRSE3LkFaAFqM+4PJ0dDZ34lAuEAAAAASUVORK5CYII="/>
+                <div class="circle"></div>
+                <div class="progress-text"><p>Confirm Appointment</p></div>
             </div>
         </div>
 
         <div class="benefit-container">
             <p>Redeem a benefit</p>
-            <form action="">
-                <input placeholder="Enter voucher code">
-            </form>
+            <div>
+                <form class="benefit-form" action="">
+                    <input placeholder="Enter voucher code">
+                </form>
+            </div>
         </div>
 
         <div class="bottom-container">
-            <p>Contact us</p>
-            <p>Home</p>
+            <a href="">Contact us</a>
+            <a href="main_elderly.html">Home</a>
         </div>
     </nav>
 
-    <div class="main-img-container">
-        <img src="./Resources/hands-together.png">
-        <p>WELCOME, USER</p>
-        <p>YOUR WELLNESS IS OUR PRIORITY</p>
-    </div>
-
-    <div class="apt-type">
-        <h1>Choose Appointment Type: </h1>
-        <div class="welfare-check">
-            <img>
-            <p>Welfare Check</p>
+    <div class="main-content">
+        <div class="main-img-container">
+            <img src="./Resources/hands-together.png">
+            <span class="main-text">
+                <p>WELCOME, USER</p>
+                <p>YOUR WELLNESS IS OUR PRIORITY</p>
+            </span>
         </div>
-        <div class="visit">
-            <img>
-            <p>Visit</p>
-        </div>
-    </div>
-
-    <div class="apt-schedule">
-        <h1 class="header">Appointment Schedule</h1>
-        <form>
-            <label>Date: </label>
-            <input>
-        </form>
-        <div class="legend">
-            <div class="available">
-                <div class="green-square"></div>
-                <p>Available</p>
+    
+        
+        <div class="apt-schedule">
+            <form id="apt-form" class="apt-form" method="GET">
+                <h1>Choose Appointment Type: </h1>
+                <div class="apt-type-container">
+                    <button type="button" class="apt-options">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAghJREFUaEPtmW1uwjAMhsvNtpNtO9l2M8ASnoJr57UTO6US/YMEafo+/k65bCe/LifXv70BCjz4sW3bn3ffV/PA7108AXx6IVYBfD8syp+agVk8/+aCWAFAor8eqn7unxoEWZ0A5AUhqgFa8SzOgtDW0j1diGoAEiBDg75Lg1gBEIGwvGB6YhWAB6In3kzsagBZfaxwIoGc6KgFPOVEJYBVfTQITTTliQSjBkcA/1cVAKo+CKJNct5rJ54oKgB6sdwKsyC0CkV7qk0wG8CTiAjCKrFqbmQCWN3Uim+2aKRP7PbKBKDNPR7QOvIwRDbAcohZALa4nFeWeWIGQIo8BGIUwDs5lntiBABVmypPqOV1BIASNQKB1srSqPUJszdEAORhGwnjmUU7afUGNim2e8j3AnAsa5tHBUbEo8nUNQvJRKyCCI0QTIY8YFWRbIgh8WgaRSUwC2JYPAK4wgB8PpyjpEZDneNx+yVWCCHrtzuRBemwEU3mKcujHIgAjFguRXwvhEbCwQuSJh7lADq3egXLcOu9Hw3v2Suj2V5ItTzKAf49ywsl4lEIeYY2j8vLxHsAZqtRqXgE8PLiewCnEG8B9AY4uge9hC0PmzbxZBm1SqcU5T0Te5J8ao3WB9D83z6QgPnE5P5rdEqxuBkNc0vDYQQMdeJDrBoBQSeyyF6HrH0DHGL25qE3rZCZMUJulY8AAAAASUVORK5CYII="/>
+                        <p>Welfare Check</p>
+                    </button>
+                    <button type="button" class="apt-options">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAAAh9JREFUeF7t2klSwzAQBdDOyYCTAScDTgYoWBQLW+pZA987CitynnoK4Ua4mgI3+LQFANSJEAAByFZEEEELRdALET0T0TsRfXw/d/l5+DVLBFWcvyCvMyDNAHSGU6GGI40GauFMgTQSiIMzHGkUkARnKNIIoEcielO2p6ejyymXy5dlA1lw6rtLRcoG+pSf4emKtOdO2+hIqxJBHlcZJkskhV9ZQKXmeOFUlBSkDCBNx+JGRvggGQ0UiZPS/iOBMnDCkaKAMnFCkSKARuCEIXkDeQyC3AJ9dZ/rIOkJNAOO+7TtCeQ1JVsjqK53eW8uL+I8JXsBuQySHkARU/I0SFagkR2Li2iati1AK+CY278WaCUcE5IGaEUcNZIUaGUcFZIEaKZBkFugzdM2F2gnHNG0zQWabUq2RhB72uYAzTwIWqG603YPaGcc1t+2W0A7dCxuhF1O2y2gXevOFdqpRQvoP6RXN82QYj9EqhQrC0sdegj40o9bGzLua37a73Wx3gOuUqfU71O98JADUCeEAASgXpVp/x4RhAhCBDUF0MU6AQKgiYGkh2NpCNK9ftnUCx0GReneAArsmNLDQARxm7daFinGI86sC5l7IcV450+EFMMcdBdQB4J6IYo0L0kzC2fmXijSvPM35CZSjEes/Xpa84+VmXu5pVh5IemDa3DqA2fuZWt/vABb/y5rm19fIHhQBND2Aogg2xGjBnX8vgBCXXBJJx5K8AAAAABJRU5ErkJggg=="/>
+                        <p>Request Visit</p>
+                    </button>
+                </div>
+                <h1 class="header">Appointment Schedule:</h1>
+                <div class="apt-schedule-container">
+                <label class="date-label">Date: </label>
+                <input class="date-input" type="date" name="apt-date" id="apt-date" />
+                <div class="time-selection">
+                    <button type="button" class="time-slot" data-time="07:00">7:00 AM</button>
+                    <button type="button" class="time-slot" data-time="08:00">8:00 AM</button>
+                    <button type="button" class="time-slot" data-time="09:00">9:00 AM</button>
+                    <button type="button" class="time-slot" data-time="10:00">10:00 AM</button>
+                    <button type="button" class="time-slot" data-time="11:00">11:00 AM</button>
+                    <button type="button" class="time-slot" data-time="12:00">12:00 PM</button>
+                    <button type="button" class="time-slot" data-time="13:00">1:00 PM</button>
+                    <button type="button" class="time-slot" data-time="14:00">2:00 PM</button>
+                    <button type="button" class="time-slot" data-time="15:00">3:00 PM</button>
+                    <button type="button" class="time-slot" data-time="16:00">4:00 PM</button>
+                    <button type="button" class="time-slot" data-time="17:00">5:00 PM</button>
+                    <button type="button" class="time-slot" data-time="17:00">6:00 PM</button>
+                </div>
+                <input type="hidden" name="selected-time" id="selected-time">
+                <input type="hidden" name="apt-type" id="apt-type">
             </div>
-            <div class="unavailable">
-                <div class="red-square"></div>
-                <p>Unavailable</p>
+            <div class="submit-container">
+                <button class="submit-btn" type="submit">Submit</button>
             </div>
+            </form>
+        </div>
+        <div class="apt-confirm-container">
+            <h1>Confirm Appointment</h1>
+            <form id="apt-confirm">
+                <div id="data"></div>
+                <div class="btn-container">
+                    <button type="button" class="cancel-btn" onclick="window.location='visit_schedule.html'">Cancel</button>
+                    <button type="submit" class="submit-btn">Confirm</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="order-finish">
+            <h1>Your Request has been Recorded!</h1>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAAA5lJREFUeF7tnFty4yAQRdHKMvm2t+F1TGYd3ob9HWdlSlCEB6sE/bogpMJVSaoihOhD3wYarMH1T5bA0PnkCXRAhId0QB2QLYh0D2rRg87X8x/nnP9xoxvfojZO//u59vC/Bjd8Rdcet8tt+n/NTzUP8lBGN/4NYLRGDm745++9XW4f2jok9xUFhIKSMmiGVdSzigAqDWYJzIMq5VFwQOfr+WOWksSTIWVLgIIBmr3mE2KpsRIkKAigLb0mF58QsjMDahFOgIbwJBOg0/XkJRXmLkZhFLv9cb/c37W1qwHtBE7gooakAtSyrNAxSQxoj3AsMUkEaM9wIkjvkjWdCNDpehq1wa6l++6XO9tudsEjeI9GamxAR/EeqdRYgI7kPXF+iTM/IgG1tMZCx7GfhBwZsDmANludo4Gs1EdOIElAR4s9S0jUiJYFdNDY88KIkllRQHFKNCTqt0qmZeSalVkWkEVeqZ5pMejnZJYEZDGEysO0Jt2czHKA1KMXpWsD/Ee07TPtkXnY/q9FurkOLQKIGhm8QUL5TmByi0zLTkp1QGAPIucqcQBWJvKSz0h6kPJBU1uRMYiCvRydlPKtC2iGtDqNlxhAgU4N3YrOVQEy536s8yBOLFuDJOmEcH/qWTmJmQFVWEvBHqEBtIctHRQglcQ6oGnASXwUgQ7Vm9XrqT4Pqm6h8YEdEAFQC8gfmWviOIvRQcjbVYtVxXop1ZDnAhMFPPQ4KiugSnfMgEwj2dJ1EQah66Rm61RGUSuz5OrbuOpO7kJo4ZsAaWVGPTTkcQQ5HE66Q5W/opYznF0Nlcw4kBYJL3+gfHmQPJyJzh4gL+U9v4tu4qNZ+IUquZCoNuSuG9tn3zi0BmtpPkcCS+s5nJzV/05mtMjSS5LGMJryLGKB4yuhYo8IkCKortqKkJxlFNRIn4xBsaXCRHsSkr8gPcOMABMaxPUeVpCOrbRKbYWYH779V56mL6TMu68vxRDfEIorlHqxyINQUpPEGmRZKRyxB4XGWgMk0mhuXRo4akDWoZ9rFLCcaG/tVZKGVuwk66iGY/KgPchNKyuYB7UMCQEH4kEtQkIub8TDPBWythzhUF4Dl9gatMqgyHwR1bGp63APWs68fY5HkBiT2lEMTGhIUUALWOaTYHN9xaFUkVjOFeJXU/hy0espXjKKv6PI8/UURV8gsInEpHppsXw1ibVoPKdNHRBBqQPqgDhCSpfpHkTw+wYuaFBnonGfYAAAAABJRU5ErkJggg=="/>
         </div>
     </div>
+    <script src="script/visit_schedule.js"></script>
 </body>
 </html>
