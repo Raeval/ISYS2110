@@ -4,7 +4,7 @@ img {
 
 .welcome-container {
     text-align: center;
-    padding-top: 70px;
+    padding-top: 160px;
     margin-bottom: 35px;
 }
 
@@ -28,7 +28,7 @@ img {
 /* Schedule */
 .schedule-section-container {
     position: relative;
-    height: 730px;
+    height: 830px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -36,7 +36,7 @@ img {
 }
 
 .schedule-box {
-    height: 500px;
+    height: 100%;
     width: 95%;
     border-radius: 20px;
     display: flex;
@@ -51,10 +51,12 @@ img {
 
 .schedule-container {
     position: absolute;
-    background-color: rgb(51, 51, 51);
-    height: 625px;
-    width: 1070px;
-    bottom: 10px;
+    width: 90%;
+    top: 90px;
+}
+
+.schedule {
+    cursor: pointer;
 }
 
 .health-condition-section-container {
@@ -172,6 +174,12 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.activity-container:hover {
+    transform: scale(1.05);
 }
 
 .activity-image-container, .activity-image {
@@ -197,7 +205,6 @@ img {
     padding: 20px 25px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-
 }
 
 .activity-text {

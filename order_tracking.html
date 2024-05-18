@@ -4,10 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/root.css">
-    <link rel="stylesheet" type="text/css" href="css/visit_schedule.css">
+    <link rel="stylesheet" type="text/css" href="css/order_tracking.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <nav class="header">
+        <div onclick="window.location='main_elderly.html'" class="left">
+            <img class="back-btn" src="./Resources/back-arrow.png">
+            <span>
+                <p>BACK TO MENU</p>
+            </span>
+        </div>
+        <div class="right">
+            <div class="customer-service">
+                <img src="./Resources/customer-service.png">
+                <p>04 22307</p>
+            </div>
+            <div class="email">
+                <img src="./Resources/mail.png">
+                <!-- TODO: CHANGE -->
+                <p>friendship_on_wheels@gmail.com</p>
+            </div>
+        </div>
+    </nav>
+
+    <div class="progress-pics">
+        <div class="preparing progress">
+            <img src="Resources/order-pics/preparing.png">
+            <img class="check" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAAA0NJREFUeF7tnEty4yAQhtHJZrK2r+FzJHMOX8Nej3MyJTgwQ1KmX3RD40JVycJGCD79/aAls4V1gAS2xQcmsAAhClmAFqA2J7IU5FFBx/Pxdwgh/oU97L+KMd4/+/zuFv9tYXsvvrtdTpf75z2PbgqKUPawv2Yw0kluYfsTz72cLm/SPjjnmQLSglKbUIJlqiwTQNZgfgKLoKwUpQ7oeD6+JVPiKFmlrQUoNUBJNX9VZtrYiSYoFUAjVQP5Jw2zawbkEU6GpqGkJkCH8yGaVM5dGg3D7PTb9XR9kfYuBjQJnMxFDEkEyLNZafskNqAZ4bT4JBagmeEUkF44azoWoMP5sEudnafzrqcred7khs+gHompkQE9i3q4pkYC9EzqKetLlPwIBeRpjaXtxz4LcqjDpgAatjrXBvKgPzSBRAF59D25qqhRVsEiGgjIo+8pF6Aa48PMbCpAj1bnCpBAMwMBeTIvqHTRCgkysyogT9ELq+u0AoLMDALkInpZw4mRDbqGa0A94EwLqBeclBtVHXVVQSMrhp3hREb9AUmTuQFwxIDEtR9pMjcIzt3KaqEeMjERIGkyNxKOFBD7kY40mRsNp5sPwtY1jxI6B3DEPoitoJRTgDWWEpITOP0TRYqSIkzo2Xnr8oFTSxqSSWOQoAn0hNOSScdX5ppeZ5FA6g0Hcwvm5Q7Mz5RKGgEHCvFf8IBDa7lBgTQKDjY2rKLYbGaUh3Wj4GD+B1VQbKBZVZRm2ZyIxG3bVLRPgET5UG2g0nUad+KU9ph5kRRkUXqVrvQpk+a0oURZ9LmYhYo4k7BqS1EPSUGxkYWKrCZO7RfzPf+DC7HHkZGGOERyM6p6yArKV9aMaOTZGDSkqocN6BlMjaMeNqDkj1w8L5MIiwtHBGhWSBI4YkAThn70PaB6YivRajpHazHbMATKqWI4TQrKI/Mc/qVmVVInZdLYbfIISQOOioI8KomyxsJuOjuTpnY4Uk1aqlE3sUfwOoO6JTjqv6tX8UE1deUNBDTeRq1cwwyMmYkBsO4bASjAMofSxcQgn1VuTZGg5e0pvm1N8RVF/m1PYbqBgEmiSHXcM7cz9UEzg+nug2aFtRSE3LkFaAFqM+4PJ0dDZ34lAuEAAAAASUVORK5CYII="/>
+            <p>Cooking Meals</p>
+        </div>
+        <div class="ready progress">
+            <img src="Resources/order-pics/picked.png">
+            <img class="check" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAAA0NJREFUeF7tnEty4yAQhtHJZrK2r+FzJHMOX8Nej3MyJTgwQ1KmX3RD40JVycJGCD79/aAls4V1gAS2xQcmsAAhClmAFqA2J7IU5FFBx/Pxdwgh/oU97L+KMd4/+/zuFv9tYXsvvrtdTpf75z2PbgqKUPawv2Yw0kluYfsTz72cLm/SPjjnmQLSglKbUIJlqiwTQNZgfgKLoKwUpQ7oeD6+JVPiKFmlrQUoNUBJNX9VZtrYiSYoFUAjVQP5Jw2zawbkEU6GpqGkJkCH8yGaVM5dGg3D7PTb9XR9kfYuBjQJnMxFDEkEyLNZafskNqAZ4bT4JBagmeEUkF44azoWoMP5sEudnafzrqcred7khs+gHompkQE9i3q4pkYC9EzqKetLlPwIBeRpjaXtxz4LcqjDpgAatjrXBvKgPzSBRAF59D25qqhRVsEiGgjIo+8pF6Aa48PMbCpAj1bnCpBAMwMBeTIvqHTRCgkysyogT9ELq+u0AoLMDALkInpZw4mRDbqGa0A94EwLqBeclBtVHXVVQSMrhp3hREb9AUmTuQFwxIDEtR9pMjcIzt3KaqEeMjERIGkyNxKOFBD7kY40mRsNp5sPwtY1jxI6B3DEPoitoJRTgDWWEpITOP0TRYqSIkzo2Xnr8oFTSxqSSWOQoAn0hNOSScdX5ppeZ5FA6g0Hcwvm5Q7Mz5RKGgEHCvFf8IBDa7lBgTQKDjY2rKLYbGaUh3Wj4GD+B1VQbKBZVZRm2ZyIxG3bVLRPgET5UG2g0nUad+KU9ph5kRRkUXqVrvQpk+a0oURZ9LmYhYo4k7BqS1EPSUGxkYWKrCZO7RfzPf+DC7HHkZGGOERyM6p6yArKV9aMaOTZGDSkqocN6BlMjaMeNqDkj1w8L5MIiwtHBGhWSBI4YkAThn70PaB6YivRajpHazHbMATKqWI4TQrKI/Mc/qVmVVInZdLYbfIISQOOioI8KomyxsJuOjuTpnY4Uk1aqlE3sUfwOoO6JTjqv6tX8UE1deUNBDTeRq1cwwyMmYkBsO4bASjAMofSxcQgn1VuTZGg5e0pvm1N8RVF/m1PYbqBgEmiSHXcM7cz9UEzg+nug2aFtRSE3LkFaAFqM+4PJ0dDZ34lAuEAAAAASUVORK5CYII="/>
+            <p>Order Ready</p>
+        </div>
+        <div class="delivering progress">
+            <img src="Resources/order-pics/delivering.png">
+            <img class="check" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAAAuBJREFUeF7tnG1ywiAQhqE9gt6neok6PY16mo69hOl99AiVDrHJ2Cjswu4mAdc/zhiC4cm7X5BgjX6iBKzyiRNQQIBCFJACojkRVdAcFXT8XK7Mi1n5a7PWvfXX6K6/GWsa/+Wc/e6PXUyz/ji1v4/5GU1BHop9dVvTQcgcpTN2709db067zC6SThMFxAUlNKIWlrCyRABJgxkC86CkFMUO6HhY7qxx2yQdMzWWAMUGqFXNizsyjZXUDScoFkBTqibmnzjMjgxojnA6aBxKIgFqvhZHatgm2RLmZGua1ft5jWn6qE02oCLgdCMmQMoCNGez4vZJyYBKhEPxSUmASobTQ7rYdUpNlwSoOSxcrrOb03mrzRk9bnTDGtSTY2poQLWoJ9XUUIBqUk9v6sjQDwKaU43F7cccwmHDgCaszrmB3PWHUBEIqDbfM4QERbQooCp9z4AQZGZPD8gvEMSK2Sig2s2rE1PMzIKAao5ed3PakWgWBlRz9Br6ocikvwLyC5QKCMioIo46qCDKjCGUW0glgNlBRQFJKIgw91OcgowxoWsOm5gCamWnPuhKIZhNK6ApAElFKal+NQ8CyCogEUAzepxFyrQwE/g63RHJgaJh3h+klBvSd52rf+gRmfiM4hOYGQlQqyJCRs11lyX7gcoieFWjhIekMglC6gF9kG9Q89QrtKKBAlSrs8aoBw2oRhVBvqezWtAHdQ1rWkTEqgetoA5SLRENq55kQDWYWop6kgG1Ua3g9bJUOFmASoWUAycbUHGhH/EcUCjXREexRx0UUcwS4JAUVEL4zzWrWzGQFDRnSBxwWBQ0R0iYGgtb37Io6PbPpkwDuFTDbmKP7saooKxp3I/dp7yDMZmC/qnpbwMBsZd8BcEkF6tY4qF2XlFXp0d8I3oEKKOYWAzo7dYULbRue4rB1hT+WL89hfAGAiKJIlVVJZzPHsVKGHTKNSoggJYCUkApBnXfVhUE8PsF+P6yWFFuWEAAAAAASUVORK5CYII="/>
+            <p>Delivering Meal</p>
+        </div>
+        <div class="delivered progress">
+            <img src="Resources/order-pics/delivered.png">
+            <div class="circle"></div>
+            <p>Meal is delivered</p>
+        </div>
+    </div>
+
+    <div class="timeline-update primary-color">
+        <h1>Shipment Updates</h1>
+        <div class="timeline">
+            <div class="line"></div>
+            <div class="latest timeline-detail">
+                <div class="time-and-date">
+                    <p class="date">May 25 2024</p>
+                    <p class="time">12:07 PM</p>
+                </div>
+                <div class="circle"></div>
+                <div class="details">
+                    <p class="title">Out for Delivery</p>
+                    <p class="subtitle">Estimated Time Arrival: 02:00 PM</p>
+                </div>
+            </div>
+
+            <div class="timeline-detail">
+                <div class="time-and-date">
+                    <p class="date">May 24 2024</p>
+                    <p class="time">10:00 AM</p>
+                </div>
+                <div class="circle"></div>
+                <div class="details">
+                    <p class="title">Waiting for Driver</p>
+                    <p class="subtitle">Driver will arrive around 12:00 PM</p>
+                </div>
+            </div>
+
+            <div class="timeline-detail">
+                <div class="time-and-date">
+                    <p class="date">May 25 2024</p>
+                    <p class="time">06:00 AM</p>
+                </div>
+                <div class="circle"></div>
+                <div class="details">
+                    <p class="title">Preparing Meal</p>
+                    <p class="subtitle">Today's dish would be Baked Salmon with Quinoa and Steamed Vegetables.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="shipment primary-color">
+        <h1>Shipment Information</h1>
+        <div class="shipment-detail">
+            <p class="title">Shipping Address</p>
+            <p class="subtitle">2/110 Redfern Street, CHIPPENDALE, NSW, 2008</p>
+        </div>
+
+        <div class="shipment-detail">
+            <p class="title">Tracking Number</p>
+            <p class="subtitle">34KHX235513601000935005</p>
+        </div>
+
+        <div class="shipment-detail">
+            <p class="title">Courier</p>
+            <p class="subtitle">DHL</p>
+        </div>
+    </div>
 </body>
 </html>

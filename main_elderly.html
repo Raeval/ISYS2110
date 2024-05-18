@@ -18,9 +18,9 @@
     <div class="schedule-section-container">
         <div class="primary-color schedule-box">
             <p class="section-header schedule-text">This Week's Schedule</p>
-        </div>
-        <div class="schedule-container">
-
+            <div class="schedule-container">
+                <div class="schedule" onclick="window.location='visit_schedule.html'"></div>
+            </div>
         </div>
     </div>
 
@@ -35,23 +35,22 @@
             </div>
         </div>
         <div class="health-right">
-            <!-- TODO: JAVASCRIPT -->
             <p class="welfare-check-text">Latest Welfare Check: 20/04/24</p>
             <div class="result-advice-container">
                 <div class="result-container">
                     <p class="health-subheader">Result: </p>
                     <ol>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Normal Blood Pressure</li>
+                        <li>High blood sugar level (130 mg/dl)</li>
+                        <li>High cholesterol level (253 mg/dl)</li>
                     </ol>
                 </div>
                 <div class="advice-container">
                     <p class="health-subheader">Advice:</p>
                     <ol>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Exercise at least thrice a week</li>
+                        <li>Lessen sugar consumption</li>
+                        <li>Avoid fatty foods</li>
                     </ol>
                 </div>
             </div>
@@ -64,7 +63,7 @@
     <div class="help-section-container primary-color">
         <p class="need-help-text">Need Help with Anything Else?</p>
         <div class="activities-container">
-            <div class="activity-container">
+            <div class="activity-container" onclick="window.location='visit_schedule.html'">
                 <div class="activity-image-container">
                     <img src="Resources/helping-elderly-bg.jpeg" class="activity-image">
                 </div>
@@ -73,7 +72,7 @@
                     <p class="activity-desc">Arrange for a Visit! Whether it's virtually or in-person, our team is here to accompany you every step of the way.</p>
                 </div>
             </div>
-            <div class="activity-container">
+            <div class="activity-container" onclick="window.location='visit_schedule.html'">
                 <div class="activity-image-container">
                     <img src="./Resources/Meeting_doctor.webp" class="activity-image">
                 </div>
@@ -84,7 +83,7 @@
             </div>
             <div class="activity-container">
                 <div class="activity-image-container">
-                    <img src="./Resources/old-people-having-fun.jpeg" class="activity-image">
+                <img src="./Resources/old-people-having-fun.jpeg" class="activity-image">
                 </div>
                 <div class="desc-container">
                     <p class="activity-text">Join a Social Activity</p>
@@ -94,7 +93,6 @@
         </div>
     </div>
 
-    <script src="script/header.js"></script>
     <script src="script/main_elderly.js"></script>
 </body>
 </html>
