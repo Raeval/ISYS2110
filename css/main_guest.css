@@ -305,6 +305,8 @@ img {
 
 .feedback_button_image {
     padding-left: 40px;
+    border-radius: 50%;
+    object-fit: cover;
     width: 80px;  /* Image size*/
     height: auto;  /* Maintain aspect ratio */
 }
