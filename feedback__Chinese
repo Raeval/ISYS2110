@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/root.css">
+    <link rel="stylesheet" type="text/css" href="css/feedback.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar"></nav>
+    <script src="script/header.js"></script>
+    <!--Feedback box section-->
+    <div class="wrapper">
+        <h3>给我们您的反馈!</h3>
+        <form action="#">
+            <div class="rating">
+                <input type="number" name="rating" hidden>
+                <i class='bx bx-star star' ></i>
+                <i class='bx bx-star star' ></i>
+                <i class='bx bx-star star' ></i>
+                <i class='bx bx-star star' ></i>
+                <i class='bx bx-star star' ></i>
+            </div>
+            <textarea name="opinion" cols="30" rows="5" placeholder="Your opinion..."></textarea>
+            <div class ="btn-group">
+                <button type="submit" class="btn submit">提交</button>
+                <button class="btn cancel">取消</button>
+            </div>
+        </form>
+    </div>
+    <script src="./script/feedback.js"></script>
+    <!--Comment section-->
+    <div class="testimonials">
+        <div class="inner">
+            <div class="border"></div>
+            <div class="row">
+                <div class="col">
+                    <div class="testimonial">
+                        <img src="./Resources/old1.jpg" alt="">
+                        <div class="name">马克</div>
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bx-star' ></i>
+                            <i class='bx bx-star' ></i>
+                        </div>
+                        <p>很棒的服务！ 快速、高效、始终带着微笑——强烈推荐!</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="testimonial">
+                        <img src="./Resources/old2.jpg" alt="">
+                        <div class="name">雅各布</div>
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bx-star' ></i>
+                        </div>
+                        <p>绝对一流的服务！ 每个细节都处理得很细心和专业。</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="testimonial">
+                        <img src="./Resources/old3.jpg" alt="">
+                        <div class="name">艾莉</div>
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                        <p>我得到了优质的服务； 团队反应迅速并真正关心我的需求。</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="testimonial">
+                        <img src="./Resources/old4.webp" alt="">
+                        <div class="name">詹姆斯</div>
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bx-star' ></i>
+                        </div>
+                        <p>我得到了优质的服务； 该团队反应迅速，对我非常的关心。</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="testimonial">
+                        <img src="./Resources/old5.jpg" alt="">
+                        <div class="name">维拉·林恩</div>
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bx-star' ></i>
+                            <i class='bx bx-star' ></i>
+                        </div>
+                        <p>我得到了优质的服务； 该团队反应迅速，真正关心我的需求。</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="testimonial">
+                        <img src="./Resources/old6.jpg" alt="">
+                        <div class="name">安娜</div>
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bx-star' ></i>
+                        </div>
+                        <p>我得到了优质的服务； 该团队反应迅速，真正关心我的需求。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
