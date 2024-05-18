@@ -46,14 +46,14 @@ h2{
     justify-content: end;
 }
 
-.input-box label, .gender-title{
+.input-box label, .gender-title, .register-title{
     width: 95%;
     color: #2f4f4f;
     font-weight: bold;
     margin: 5px 0;
 }
 
-.gender-title{
+.gender-title, .register-title{
     font-size: 16px;
 }
 
@@ -70,17 +70,16 @@ h2{
     box-shadow: 0 3px 6px rgba(0,0,0,0.2);
 }
 
-.gender-category{
-    color: grey;
+.gender-category, .register-category{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
 }
 
-.gender-category label{
+.gender-category label, .register-category label{
     padding: 0 20px 0 5px;
     font-size: 14px;
-}
-
-.gender-category label, gender-category input{
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .alert p{
@@ -142,10 +141,9 @@ h2{
         justify-content: space-between;
     }
 
-    .gender-category{
+    .gender-category, .register-category{
         display: flex;
         justify-content: space-between;
-        width: 60%;
+        width: 100%;
     }
 }
-
