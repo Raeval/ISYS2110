@@ -9,6 +9,7 @@
 
     <!-- For Feedback Rating-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     
 </head>
 
@@ -16,17 +17,48 @@
     <nav class="navbar"></nav>
     <script src="script/header.js"></script>
     <!-- 1st section-->
-    <h1 class="main-title">Get the Care You Need</h1>
-    <div class="main-text">
-        <p>We will match you with a volunteer<br>tailored just for you!</p>
-    </div>
-    <div class="welcome_section">
-        <div class="welcome_content">
-          <a href="register.html" id="myButton">Register Now</a>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <h1 class="main-title">Get the Care You Need</h1>
+                <div class="main-text">
+                    <p>We will match you with a volunteer<br>tailored just for you!</p>
+                </div>
+                <div class="welcome_section">
+                    <div class="welcome_content">
+                        <a href="register.html" id="myButton">Register Now</a>
+                    </div>
+                    <img src="Resources/helping-elderly-bg.jpeg" class="helping-elderly" >
+                </div>
+                <div class="color-bar"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="welcome_section">
+                    <video width="100%" height="100%" controls>
+                        <source src="movie.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
         </div>
-        <img src="Resources/helping-elderly-bg.jpeg" class="helping-elderly" >
+        <div class="swiper-button-next swiper-btn"></div>
+        <div class="swiper-button-prev swiper-btn"></div>
+        <div class="swiper-pagination"></div>
     </div>
-    <div class="color-bar"></div>
+    <script src="script/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
     <!-- 2nd Section-->
     <div class="our_service_container primary-color">
         <p class="our_service_text" id="services">Our Services</p>
