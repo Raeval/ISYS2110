@@ -3,37 +3,12 @@ img {
 }
 
 .welcome_section {
-    padding-top: 72px;
     position: relative;
     height: 750px; /* Adjust this value as needed */
     background-color: #f4f4f4; /* Fallback color if the image doesn't load */
     overflow: hidden;
 }
 
-.swiper .swiper-btn {
-    background-color: rgba(31, 124, 47, 0.7);
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    transition: transform 0.3s ease;
-}
-
-.swiper .swiper-btn:hover {
-    background-color: rgba(31, 124, 46, 0.9);
-    color: rgba(255, 255, 255, 0.8);
-    transform: scale(1.1);
-
-}
-
-.swiper .swiper-btn::before,
-.swiper .swiper-btn::after {
-    font-size: 25px;
-    color: rgba(255, 255, 255, 0.6);
-}
-
-.swiper .swiper-pagination-bullet {
-    background-color: green;
-}
 
 #myButton:hover {
     background-color: #45a049; /* Darker green */
@@ -136,7 +111,7 @@ img {
     cursor: pointer;
     border-radius: 10px;
     position: absolute;
-    top: 700px;  /* Y position */
+    top: 630px;  /* Y position */
     left: 26px;  /* X position */
     font-weight: bold;
 }
@@ -250,7 +225,7 @@ img {
 }
 
 .activity-desc {
-    padding-left: 20px;
+    padding-left: 0px;
     margin: 0;
     margin-top: 5px;
     color: #d8d8d8;
@@ -262,6 +237,7 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .polygon-container {
@@ -281,7 +257,6 @@ img {
     clip-path: polygon(20% 100%, 100% 100%, 100% 0%); /* Adjust coordinates as needed */
     top: 0;
     left: 0;
-    bottom: 0;
     background-color: #A7AA77; /* Red */
 }
 .polygon3 {
@@ -321,6 +296,7 @@ img {
     font-size: 16px;
     border-radius: 10px;
     cursor: pointer;
+    
 }
 
 .feedback_profile {
@@ -329,11 +305,11 @@ img {
 }
 
 .feedback_button_image {
-    margin-left: 40px;
+    padding-left: 40px;
     border-radius: 50%;
     object-fit: cover;
     width: 80px;  /* Image size*/
-    height: 80px;  /* Maintain aspect ratio */
+    height: auto;  /* Maintain aspect ratio */
 }
 
 .feedback_button_title{

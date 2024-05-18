@@ -9,7 +9,6 @@
 
     <!-- For Feedback Rating-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     
 </head>
 
@@ -17,71 +16,41 @@
     <nav class="navbar"></nav>
     <script src="script/header.js"></script>
     <!-- 1st section-->
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <h1 class="main-title">Get the Care You Need</h1>
-                <div class="main-text">
-                    <p>We will match you with a volunteer<br>tailored just for you!</p>
-                </div>
-                <div class="welcome_section">
-                    <div class="welcome_content">
-                        <a href="register.html" id="myButton">Register Now</a>
-                    </div>
-                    <img src="Resources/helping-elderly-bg.jpeg" class="helping-elderly" >
-                </div>
-                <div class="color-bar"></div>
-            </div>
-            <div class="swiper-slide">
-                <div class="welcome_section">
-                    <video width="100%" height="100%" controls>
-                        <source src="movie.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </div>
-        </div>
-        <div class="swiper-button-next swiper-btn"></div>
-        <div class="swiper-button-prev swiper-btn"></div>
-        <div class="swiper-pagination"></div>
+    <h1 class="main-title">获取您需要的护理</h1>
+    <div class="main-text">
+        <p>我们将为您分配一名志愿者<br>专门为您量身定制!</p>
     </div>
-    <script src="script/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-          slidesPerView: 1,
-          loop: true,
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-        });
-      </script>
+    <div class="welcome_section">
+        <div class="welcome_content">
+          <a href="register.html" id="myButton">注册</a>
+        </div>
+        <img src="Resources/helping-elderly-bg.jpeg" class="helping-elderly" >
+    </div>
+    <div class="color-bar"></div>
+    
     <!-- 2nd Section-->
     <div class="our_service_container primary-color">
-        <p class="our_service_text" id="services">Our Services</p>
+        <p class="our_service_text">我们的服务</p>
 
         <div class="activities-container">
             <div class="activity-container">
                 <div class="desc_top red">
-                    <p class="service_names">Welfare Check</p>
-                    <p class="activity-desc">Arrange for a Visit! Whether it's virtually or in-person, our team is here to accompany you every step of the way.</p>
+                    <p class="service_names">检查福利</p>
+                    <p class="activity-desc">安排参观！ 无论是虚拟还是面对面，我们的团队都会全程陪伴您。</p>
                 </div>
                 <div class="desc-container"></div>
             </div>
             <div class="activity-container">
                 <div class="desc_top blue">
-                    <p class="service_names">Daily Visits</p>
-                    <p class="activity-desc">We'll conduct blood tests and schedule an appointment for you with a doctor to assess your health.</p>
+                    <p class="service_names">每日访问</p>
+                    <p class="activity-desc">我们将为您进行血液检查并安排与医生的预约以评估您的健康状况。</p>
                 </div>
                 <div class="desc-container"></div>
             </div>
             <div class="activity-container">
                 <div class="desc_top green">
-                    <p class="service_names_special1">Specialised Volunteer</p>
-                    <p class="activity-desc">You will be assigned a professional volunteer to work with you. </p>
+                    <p class="service_names_special1">专业志愿者</p>
+                    <p class="activity-desc">我们将会为您分配专业的志愿者进行服务。</p>
                 </div>
                 <div class="desc-container"></div>
             </div>
@@ -98,7 +67,7 @@
         <div class="polygon-container">
             
             <div>
-                <p class="feedbacks_title primary-text">Feedbacks</p>
+                <p class="feedbacks_title">反馈</p>
             </div>
 
             <!-- Feedback Example Buttons-->
@@ -109,19 +78,19 @@
                             <img src="Resources/old1.jpg" class="feedback_button_image" alt="Image not found">
                         </div>
                         <div class="name_and_star">
-                            <h2 class="feedback_button_title">Mark</h2>
+                            <h2 class="feedback_button_title">马克</h2>
                             <!-- Part where rating system works. -->
                             <div class="feedback_star">
                                 <span class="fa fa-star orange"></span>
                                 <span class="fa fa-star orange"></span>
                                 <span class="fa fa-star orange"></span>
-                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star orange"></span>
                                 <span class="fa fa-star"></span>
                             </div>
                         </div>
                     </div>
                     <div class="feedback_desc_container">
-                        <p class="feedback_desc">This is am example text. btw I liked how the volunteer was picking up the trash. The posture was perfect and the way he uses VS code was unbelievable.</p>
+                        <p class="feedback_desc">很棒的服务！ 快速、高效、始终带着微笑——强烈推荐!</p>
                     </div>
                 </a>
 
@@ -131,19 +100,19 @@
                             <img src="Resources/old2.jpg" class="feedback_button_image" alt="Image not found">
                         </div>
                         <div class="name_and_star">
-                            <h2 class="feedback_button_title">Jacob</h2>
+                            <h2 class="feedback_button_title">雅各布</h2>
                             <!-- Part where rating system works. -->
                             <div class="feedback_star">
                                 <span class="fa fa-star orange"></span>
                                 <span class="fa fa-star orange"></span>
                                 <span class="fa fa-star orange"></span>
-                                <span class="fa fa-star orange"></span>
+                                <span class="fa fa-star"></span>
                                 <span class="fa fa-star"></span>
                             </div>
                         </div>
                     </div>
                     <div class="feedback_desc_container">
-                        <p class="feedback_desc">This is am example text. btw I liked how the volunteer was picking up the trash. The posture was perfect and the way he uses VS code was unbelievable.</p>
+                        <p class="feedback_desc">绝对一流的服务！ 每个细节都处理得很细心和专业。</p>
                     </div>
                 </a>
 
@@ -153,29 +122,7 @@
                             <img src="Resources/old3.jpg" class="feedback_button_image" alt="Image not found">
                         </div>
                         <div class="name_and_star">
-                            <h2 class="feedback_button_title">Elly</h2>
-                            <!-- Part where rating system works. -->
-                            <div class="feedback_star">
-                                <span class="fa fa-star orange"></span>
-                                <span class="fa fa-star orange"></span>
-                                <span class="fa fa-star orange"></span>
-                                <span class="fa fa-star orange"></span>
-                                <span class="fa fa-star orange"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="feedback_desc_container">
-                        <p class="feedback_desc">This is am example text. btw I liked how the volunteer was picking up the trash. The posture was perfect and the way he uses VS code was unbelievable.</p>
-                    </div>
-                </a>
-
-                <a href="feedback.html" class="feedback_button">
-                    <div class="feedback_profile">
-                        <div class="feedback_profile_img">
-                            <img src="Resources/old4.webp" class="feedback_button_image" alt="Image not found">
-                        </div>
-                        <div class="name_and_star">
-                            <h2 class="feedback_button_title">James</h2>
+                            <h2 class="feedback_button_title">艾莉</h2>
                             <!-- Part where rating system works. -->
                             <div class="feedback_star">
                                 <span class="fa fa-star orange"></span>
@@ -187,7 +134,29 @@
                         </div>
                     </div>
                     <div class="feedback_desc_container">
-                        <p class="feedback_desc">This is am example text. btw I liked how the volunteer was picking up the trash. The posture was perfect and the way he uses VS code was unbelievable.</p>
+                        <p class="feedback_desc">我得到了优质的服务； 团队反应迅速并真正关心我的需求。</p>
+                    </div>
+                </a>
+
+                <a href="feedback.html" class="feedback_button">
+                    <div class="feedback_profile">
+                        <div class="feedback_profile_img">
+                            <img src="Resources/old4.webp" class="feedback_button_image" alt="Image not found">
+                        </div>
+                        <div class="name_and_star">
+                            <h2 class="feedback_button_title">詹姆斯</h2>
+                            <!-- Part where rating system works. -->
+                            <div class="feedback_star">
+                                <span class="fa fa-star orange"></span>
+                                <span class="fa fa-star orange"></span>
+                                <span class="fa fa-star orange"></span>
+                                <span class="fa fa-star orange"></span>
+                                <span class="fa fa-star orange"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback_desc_container">
+                        <p class="feedback_desc">我得到了优质的服务； 该团队反应迅速，对我非常的关心。</p>
                     </div>
                 </a>
                 
