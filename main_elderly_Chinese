@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/root.css">
+    <link rel="stylesheet" type="text/css" href="css/main_elderly.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar"></nav>
+    <div class="welcome-container">
+        <p class="welcome-text"><span class="primary-text">欢迎</span> <span id="user-text">回来!</span></p>
+        <p class="great-day-text primary-text">希望你有美好的一天!</p>
+    </div>
+
+    <div class="schedule-section-container">
+        <div class="primary-color schedule-box">
+            <p class="section-header schedule-text">本周的日程</p>
+        </div>
+        <div class="schedule-container">
+
+        </div>
+    </div>
+
+    <div class="health-condition-section-container">
+        <div class="health-left">
+            <div class="health-text-container">
+                <p class="section-header health-header">健康状况</p>
+                <p class="health-desc">根据您上次的预约</p>
+            </div>
+            <div class="health-kit-container">
+                <img src="./Resources/figure-with-aid-kit.png">
+            </div>
+        </div>
+        <div class="health-right">
+            <!-- TODO: JAVASCRIPT -->
+            <p class="welfare-check-text">上一次检查: 20/04/24</p>
+            <div class="result-advice-container">
+                <div class="result-container">
+                    <p class="health-subheader">结果: </p>
+                    <ol>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                    </ol>
+                </div>
+                <div class="advice-container">
+                    <p class="health-subheader">建议:</p>
+                    <ol>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="health-notebook-container">
+            <img src="./Resources/notes.png">
+        </div>
+    </div>
+
+    <div class="help-section-container primary-color">
+        <p class="need-help-text">需要其他帮助?</p>
+        <div class="activities-container">
+            <div class="activity-container">
+                <div class="activity-image-container">
+                    <img src="Resources/helping-elderly-bg.jpeg" class="activity-image">
+                </div>
+                <div class="desc-container">
+                    <p class="activity-text">预约参观</p>
+                    <p class="activity-desc">安排参观！ 无论是虚拟还是面对面，我们的团队都会全程陪伴您。</p>
+                </div>
+            </div>
+            <div class="activity-container">
+                <div class="activity-image-container">
+                    <img src="./Resources/Meeting_doctor.webp" class="activity-image">
+                </div>
+                <div class="desc-container">
+                    <p class="activity-text">健康检查</p>
+                    <p class="activity-desc">我们将为您进行血液检查并安排与医生的预约以评估您的健康状况。</p>
+                </div>
+            </div>
+            <div class="activity-container">
+                <div class="activity-image-container">
+                    <img src="./Resources/old-people-having-fun.jpeg" class="activity-image">
+                </div>
+                <div class="desc-container">
+                    <p class="activity-text">参加活动</p>
+                    <p class="activity-desc">享受生活吧！ 深入了解我们的高级社交活动。 在我们温暖的社区中结交朋友、分享欢笑并享受美好时光。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script/header.js"></script>
+    <script src="script/main_elderly.js"></script>
+</body>
+</html>
