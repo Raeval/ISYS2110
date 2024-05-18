@@ -6,54 +6,75 @@
     <link rel="stylesheet" type="text/css" href="css/root.css">
     <link rel="stylesheet" type="text/css" href="css/register.css">
     <title>Register_page</title>
+    <script>
+        function submitForm() {
+            // Prevent the form from actually submitting
+            event.preventDefault();
+            
+            // Get the message container
+            var messageContainer = document.getElementById('messageContainer');
+            
+            // Set the message
+            messageContainer.innerHTML = "Thank you for registering with us! Our team will contact you soon!";
+        }
+    </script>
 </head>
 <body>
-    <div class = "container">
-        <form action = "" method= "post">
+    <div class="container">
+        <form id="registrationForm" action="" method="post" onsubmit="submitForm()">
             <h2>注册</h2>
-            <div class = "content">
-                <div class = "input-box">
-                    <label for = "name">姓名</label>
-                    <input type ="text" placeholder ="输入姓名" name="name" required>
+            <div class="content">
+                <div class="input-box">
+                    <label for="name">姓名</label>
+                    <input type="text" placeholder="输入姓名" name="name" required>
                 </div>
-                <div class = "input-box">
-                    <label for = "username">用户名</label>
-                    <input type ="text" placeholder ="输入用户名" name="uname" required>
+                <div class="input-box">
+                    <label for="username">用户名</label>
+                    <input type="text" placeholder="输入用户名" name="uname" required>
                 </div>
-                <div class = "input-box">
-                    <label for = "email">邮箱</label>
-                    <input type ="text" placeholder ="输入邮箱" name="email" required>
+                <div class="input-box">
+                    <label for="email">邮箱</label>
+                    <input type="text" placeholder="输入邮箱" name="email" required>
                 </div>
-                <div class = "input-box">
-                    <label for = "phonenumber">电话号码</label>
-                    <input type ="text" placeholder ="输入电话号码" name="phoneNumber" required>
+                <div class="input-box">
+                    <label for="phonenumber">电话号码</label>
+                    <input type="text" placeholder="输入电话号码" name="phoneNumber" required>
                 </div>
-                <div class = "input-box">
-                    <label for = "password">密码</label>
-                    <input type ="text" placeholder ="输入新密码" name="password" required>
+                <div class="input-box">
+                    <label for="password">密码</label>
+                    <input type="text" placeholder="输入密码" name="password" required>
                 </div>
-                <div class = "input-box">
-                    <label for = "Cpassword">确认密码</label>
-                    <input type ="password" placeholder ="确认密码" name="confirmPassword" required>
+                <div class="input-box">
+                    <label for="Cpassword">确认密码</label>
+                    <input type="password" placeholder="确认密码" name="confirmPassword" required>
                 </div>
                 <span class="gender-title">性别</span>
                 <div class="gender-category">
-                    <input type ="radio" name="gender" id = "male">
-                    <label for="gender">男</label>
-                    <input type ="radio" name="gender" id = "female">
-                    <label for="gender">女</label>
-                    <input type ="radio" name="gender" id = "other">
-                    <label for="gender">其它</label>
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">男</label>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">女</label>
+                    <input type="radio" name="gender" id="other">
+                    <label for="other">其他</label>
                 </div>
+                <span class="register-title">以什么身份注册</span>
+                <div class="register-category">
+                    <input type="radio" name="register" id="user">
+                    <label for="User">用户</label>
+                    <input type="radio" name="register" id="volunteer">
+                    <label for="Volunteer">志愿者</label>
+                </div>
+                
             </div>
             <div class="alert">
-                <p>点击注册即代表您同意我们的 <a href="#">条款, </a><a href="#">隐私政策</a> 和 
+                <p>点击注册即代表您同意我们的 <a href="#">条款, </a><a href="#">隐私政策</a>和
                 <a href="#">插件政策。</a> 您可能会收到我们发送的短信通知，并可以随时选择退出。 </p>
             </div>
             <div class="button-container">
-                <button type="submit">注册</button>
+                <button class="submit-btn" type="submit">注册</button>
             </div>
         </form>
+        <div id="messageContainer" style="color: green; margin-top: 20px;"></div> <!-- Container for the thank you message -->
     </div>
 </body>
 </html>
