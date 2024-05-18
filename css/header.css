@@ -1,22 +1,5 @@
-<div class="navbar">
-    <div class="left-nav">
-        <div class="logo-container">
-            <img class="logo" src="./Resources/Logo.png" alt="logo">
-        </div>
-    </div>
-    <div class="right-nav">
-        <a href="register.html">Join Our Team</a>
-        <a href="main_guest.html#services">Our Services</a>
-        <a href="">Language</a>
-        <div class="profile-container">
-            <img class="profile-img" src="./Resources/profile-picture.png" alt="Profile">
-        </div>
-    </div>
-</div>
-
-<style>
 .navbar {
-    z-index: 100;
+    z-index: 10000;
     position: fixed;
     background-color: #E1A200;
     margin: 0;
@@ -43,6 +26,7 @@
 }
 
 .right-nav {
+    position: relative;
     display: flex;
     align-items: center;
     padding-right: 25px;
@@ -60,6 +44,21 @@
     color: #d9d6cd;
 }
 
+.language-options {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 60px;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.language-options a {
+    margin: 10px 15px;
+    color: rgba(77, 77, 77, 0.8);
+}
+
 .profile-container {
     width: 45px;
     height: 45px;
@@ -70,4 +69,3 @@
     height: 100%;
     cursor: pointer;
 }
-</style>

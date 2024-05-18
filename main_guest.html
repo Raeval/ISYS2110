@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/root.css">
     <link rel="stylesheet" type="text/css" href="css/main_guest.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
     <title>Welcome Guest</title>
 
     <!-- For Feedback Rating-->
@@ -14,8 +15,27 @@
 </head>
 
 <body>
-    <nav class="navbar"></nav>
+    <div class="navbar">
+        <div class="left-nav">
+            <div class="logo-container">
+                <img class="logo" src="./Resources/Logo.png" alt="logo">
+            </div>
+        </div>
+        <div class="right-nav">
+            <a href="register.html">Join Our Team</a>
+            <a href="main_guest.html#services">Our Services</a>
+            <a id="language">Language</a>
+            <div class="profile-container">
+                <img class="profile-img" src="./Resources/profile-picture.png" alt="Profile">
+            </div>
+            <div class="language-options" id="language-options">
+                <a href="main_guest.html" id="language-english">English</a>
+                <a href="main_guest_chinese.html" id="language-chinese">Chinese</a>
+            </div>
+        </div>
+    </div>
     <script src="script/header.js"></script>
+    
     <!-- 1st section-->
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
@@ -121,7 +141,7 @@
                         </div>
                     </div>
                     <div class="feedback_desc_container">
-                        <p class="feedback_desc">This is am example text. btw I liked how the volunteer was picking up the trash. The posture was perfect and the way he uses VS code was unbelievable.</p>
+                        <p class="feedback_desc">Fantastic service! Quick, efficient, and always with a smile—highly recommended!</p>
                     </div>
                 </a>
 
@@ -143,7 +163,7 @@
                         </div>
                     </div>
                     <div class="feedback_desc_container">
-                        <p class="feedback_desc">This is am example text. btw I liked how the volunteer was picking up the trash. The posture was perfect and the way he uses VS code was unbelievable.</p>
+                        <p class="feedback_desc">Absolutely stellar service! Every detail was handled with care and professionalism.</p>
                     </div>
                 </a>
 
@@ -165,7 +185,7 @@
                         </div>
                     </div>
                     <div class="feedback_desc_container">
-                        <p class="feedback_desc">This is am example text. btw I liked how the volunteer was picking up the trash. The posture was perfect and the way he uses VS code was unbelievable.</p>
+                        <p class="feedback_desc">I received excellent service; the team was responsive and genuinely cared about my needs.</p>
                     </div>
                 </a>
 
@@ -187,7 +207,7 @@
                         </div>
                     </div>
                     <div class="feedback_desc_container">
-                        <p class="feedback_desc">This is am example text. btw I liked how the volunteer was picking up the trash. The posture was perfect and the way he uses VS code was unbelievable.</p>
+                        <p class="feedback_desc">I received excellent service; the team was responsive and genuinely cared about my needs.</p>
                     </div>
                 </a>
                 
@@ -207,7 +227,6 @@
     <a href="feedback.html" class="image-link">
         <img src="Resources/arrow.png" class="arrow">
     </a>
-    
 </body>
 </html>
 

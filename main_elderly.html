@@ -5,11 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/root.css">
     <link rel="stylesheet" type="text/css" href="css/main_elderly.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
     <title>Document</title>
 </head>
 
 <body>
-    <nav class="navbar"></nav>
+    <div class="navbar">
+        <div class="left-nav">
+            <div class="logo-container">
+                <img class="logo" src="./Resources/Logo.png" alt="logo">
+            </div>
+        </div>
+        <div class="right-nav">
+            <a href="register.html">Join Our Team</a>
+            <a href="main_guest.html#services">Our Services</a>
+            <a id="language">Language</a>
+            <div class="profile-container">
+                <img class="profile-img" src="./Resources/profile-picture.png" alt="Profile">
+            </div>
+            <div class="language-options" id="language-options">
+                <a href="main_elderly.html" id="language-english">English</a>
+                <a href="main_elderly_chinese.html" id="language-chinese">Chinese</a>
+            </div>
+        </div>
+    </div>
+    <script src="script/header.js"></script>
+
     <div class="welcome-container">
         <p class="welcome-text"><span class="primary-text">Welcome Back</span> <span id="user-text">User!</span></p>
         <p class="great-day-text primary-text">Hope You're Having a Great Day!</p>
