@@ -20,10 +20,69 @@ img {
     height: auto;
     border: 1px solid #000;
 }
+.blood_check_img{
+    z-index: 1000;
+    position: absolute;
+    top: 200px;
+    left: 300px;
+    width: 100px; /* Example width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px; /* Example margin */
+    display: flex; /* Ensure images are block-level elements */
+
+}
+
+.doctor_img{
+    z-index: 1000;
+    position: absolute;
+    top: 190px;
+    left: 990px;
+    width: 85px; /* Example width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px; /* Example margin */
+    display: flex; /* Ensure images are block-level elements */
+
+}
+
+.food_img{
+    z-index: 1000;
+    position: absolute;
+    top: 150px;
+    left: 790px;
+    width: 150px; /* Example width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px; /* Example margin */
+    display: flex; /* Ensure images are block-level elements */
+
+}
+
+.helping_elderly_animation_img{
+    z-index: 1000;
+    position: absolute;
+    top: 190px;
+    left: 600px;
+    width: 120px; /* Example width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px; /* Example margin */
+    display: flex; /* Ensure images are block-level elements */
+
+}
+
+.human_heart_img{
+    z-index: 1000;
+    position: absolute;
+    top: 22px;
+    left: 300px;
+    width: 120px; /* Example width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px; /* Example margin */
+    display: flex; /* Ensure images are block-level elements */
+
+}
 
 .main-title {
     position: absolute;
-    top: 540px;  /* Y position */
+    top: 480px;  /* Y position */
     left: 27px;  /* X position */
     font-size: 45px;  /* Text size */
     color: rgb(203, 146, 0);  /* Text color */
@@ -32,7 +91,7 @@ img {
 }
 .main-text {
     position: absolute;
-    top: 620px;  /* Y position */
+    top: 550px;  /* Y position */
     left: 27px;  /* X position */
     font-size: 20px;  /* Text size */
     color: rgb(228, 227, 223);  /* Text color */
@@ -67,12 +126,12 @@ img {
     justify-content: center;
     cursor: pointer;
     position: absolute;
-    top: 1745px;
+    top: 1605px;
     left: 1350px;
 }
 .arrow {
     position: absolute;
-    top: 1753px;
+    top: 1613px;
     left: 1354px;
     width: 70px;
     height: auto;
@@ -82,6 +141,10 @@ img {
     cursor: pointer;
     z-index: 1000;
 }
+
+
+
+
 
 .image-link {
     cursor: pointer;
