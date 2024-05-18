@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/root.css">
+    <link rel="stylesheet" type="text/css" href="css/main_guest.css">
+    <title>Welcome Guest</title>
+
+    <!-- For Feedback Rating-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+
+<body>
+    <nav class="navbar"></nav>
+    <script src="script/header.js"></script>
+    <!-- 1st section-->
+    <h1 class="main-title">获取您需要的护理</h1>
+    <div class="main-text">
+        <p>我们将为您分配一名志愿者<br>专门为您量身定制!</p>
+    </div>
+    <div class="welcome_section">
+        <div class="welcome_content">
+          <a href="register.html" id="myButton">注册</a>
+        </div>
+        <img src="Resources/helping-elderly-bg.jpeg" class="helping-elderly" >
+    </div>
+    <div class="color-bar"></div>
+    
+    <!-- 2nd Section-->
+    <div class="our_service_container primary-color">
+        <p class="our_service_text">我们的服务</p>
+
+        <div class="activities-container">
+            <div class="activity-container">
+                <div class="desc_top red">
+                    <p class="service_names">检查福利</p>
+                    <p class="activity-desc">安排参观！ 无论是虚拟还是面对面，我们的团队都会全程陪伴您。</p>
+                </div>
+                <div class="desc-container"></div>
+            </div>
+            <div class="activity-container">
+                <div class="desc_top blue">
+                    <p class="service_names">每日访问</p>
+                    <p class="activity-desc">我们将为您进行血液检查并安排与医生的预约以评估您的健康状况。</p>
+                </div>
+                <div class="desc-container"></div>
+            </div>
+            <div class="activity-container">
+                <div class="desc_top green">
+                    <p class="service_names_special1">专业志愿者</p>
+                    <p class="activity-desc">我们将会为您分配专业的志愿者进行服务。</p>
+                </div>
+                <div class="desc-container"></div>
+            </div>
+        </div>
+        <img src="Resources/blood-check.png" class="blood_check_img" alt="Image not found">
+        <img src="Resources/doctor.png" class="doctor_img" alt="Image not found">
+        <img src="Resources/food.png" class="food_img" alt="Image not found">
+        <img src="Resources/helping-elderly-animation.png" class="helping_elderly_animation_img" alt="Image not found">
+        <img src="Resources/human-heart.png" class="human_heart_img" alt="Image not found">
+    </div>
+
+    <!-- 3rd Section-->
+    <div class="feedbacks_container">
+        <div class="polygon-container">
+            
+            <div>
+                <p class="feedbacks_title">反馈</p>
+            </div>
+
+            <!-- Feedback Example Buttons-->
+            <div class="button-grid">
+                <a href="feedback.html" class="feedback_button">
+                    <div class="feedback_profile">
+                        <div class="feedback_profile_img">
+                            <img src="Resources/old1.jpg" class="feedback_button_image" alt="Image not found">
+                        </div>
+                        <div class="name_and_star">
+                            <h2 class="feedback_button_title">马克</h2>
+                            <!-- Part where rating system works. -->
+                            <div class="feedback_star">
+                                <span class="fa fa-star orange"></span>
+                                <span class="fa fa-star orange"></span>
+                                <span class="fa fa-star orange"></span>
+                                <span class="fa fa-star orange"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback_desc_container">
+                        <p class="feedback_desc">很棒的服务！ 快速、高效、始终带着微笑——强烈推荐!</p>
+                    </div>
+                </a>
+
+                <a href="feedback.html" class="feedback_button">
+                    <div class="feedback_profile">
+                        <div class="feedback_profile_img">
+                            <img src="Resources/old2.jpg" class="feedback_button_image" alt="Image not found">
+                        </div>
+                        <div class="name_and_star">
+                            <h2 class="feedback_button_title">雅各布</h2>
+                            <!-- Part where rating system works. -->
+                            <div class="feedback_star">
+                                <span class="fa fa-star orange"></span>
+                                <span class="fa fa-star orange"></span>
+                                <span class="fa fa-star orange"></span>
+                                <span class="fa fa-star orange"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback_desc_container">
+                        <p class="feedback_desc">绝对一流的服务！ 每个细节都处理得很细心和专业。</p>
+                    </div>
+                </a>
+
+                <a href="feedback.html" class="feedback_button">
+                    <div class="feedback_profile">
+                        <div class="feedback_profile_img">
+                            <img src="Resources/old3.jpg" class="feedback_button_image" alt="Image not found">
+                        </div>
+                        <div class="name_and_star">
+                            <h2 class="feedback_button_title">艾莉</h2>
+                            <!-- Part where rating system works. -->
+                            <div class="feedback_star">
+                                <span class="fa fa-star orange"></span>
+                                <span class="fa fa-star orange"></span>
+                                <span class="fa fa-star orange"></span>
+                                <span class="fa fa-star orange"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback_desc_container">
+                        <p class="feedback_desc">我得到了优质的服务； 团队反应迅速并真正关心我的需求。</p>
+                    </div>
+                </a>
+
+                <a href="feedback.html" class="feedback_button">
+                    <div class="feedback_profile">
+                        <div class="feedback_profile_img">
+                            <img src="Resources/old4.webp" class="feedback_button_image" alt="Image not found">
+                        </div>
+                        <div class="name_and_star">
+                            <h2 class="feedback_button_title">詹姆斯</h2>
+                            <!-- Part where rating system works. -->
+                            <div class="feedback_star">
+                                <span class="fa fa-star orange"></span>
+                                <span class="fa fa-star orange"></span>
+                                <span class="fa fa-star orange"></span>
+                                <span class="fa fa-star orange"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback_desc_container">
+                        <p class="feedback_desc">我得到了优质的服务； 该团队反应迅速，对我非常的关心。</p>
+                    </div>
+                </a>
+                
+            </div>
+
+            
+            <button type="button" onclick="alert('Hello world!')">Button</button>
+
+            <div class="polygon polygon1"></div>
+            <div class="polygon polygon3"></div>
+
+        </div>
+    </div>
+    <button id="circleButton">
+        <span class="arrow"></span>
+    </button>
+    <a href="feedback.html" class="image-link">
+        <img src="Resources/arrow.png" class="arrow">
+    </a>
+    
+</body>
+</html>
+
