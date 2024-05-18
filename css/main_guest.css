@@ -304,11 +304,11 @@ img {
 }
 
 .feedback_button_image {
-    padding-left: 40px;
+    margin-left: 40px;
     border-radius: 50%;
     object-fit: cover;
     width: 80px;  /* Image size*/
-    height: auto;  /* Maintain aspect ratio */
+    height: 80px;  /* Maintain aspect ratio */
 }
 
 .feedback_button_title{
