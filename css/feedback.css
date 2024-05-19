@@ -17,6 +17,13 @@ body{
     justify-content: center;
 }
 
+body .navbar {
+    position: fixed; 
+    top: 0;          
+    width: 100%;     
+}
+    
+
 img {
     object-fit: cover;
     object-position: center;
