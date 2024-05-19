@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff3cd;
+    margin: 0;
+    padding: 0;
+}
+
+.about-box {
+    width: 60%;
+    margin: 50px auto;
+    background-color: #e2ce5fe9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    color: #333;
+}
+
+.about-text h2 {
+    text-align: center;
+}
+
+.about-text p {
+    line-height: 1.6;
+}
+
+.team-member {
+    background-color: #fff3cd;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.team-member h3 {
+    margin: 0;
+}
+
+.team-member p {
+    margin: 5px 0;
+}
